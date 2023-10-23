@@ -2,7 +2,7 @@
 A brief and simple Restful API server library in Java
 
 ### Documentation:
-+ [**Quick Start**]([https://github.com/Blocker45/RestfulAPIServer/doc/QuickStart.md](https://github.com/Blocker45/RestfulAPIServer/blob/main/doc/QuickStart.md))
++ [**Quick Start**](https://github.com/Blocker45/RestfulAPIServer/doc/QuickStart.md](https://github.com/Blocker45/RestfulAPIServer/blob/main/doc/QuickStart.md)
 
 ### Features:
 #### 1.No extra dependencies
