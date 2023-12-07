@@ -8,7 +8,7 @@ A brief and simple Restful API server library in Java
 #### 1.No extra dependencies
 This project only used core libraries in jdk and requires no more extra dependencies.
 #### 2.Simple
-You start a Restful API server with just several lines of codes like:
+You can start a Restful API server with just several lines of codes like:
 ```
 public static void main(String[] args) throws IOException {
 
