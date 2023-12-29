@@ -34,6 +34,6 @@ public static void main(String[] args) throws IOException {
 }
 ```
 #### 3.Efficient
-Cocurrent requests supported.
+Concurrent requests supported.
 
-Copyright@**Blocker45**
+Copyright@**Tensorcraft**
