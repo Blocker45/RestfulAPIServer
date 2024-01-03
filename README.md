@@ -15,7 +15,7 @@ public static void main(String[] args) throws IOException {
     int port = 8080;
     String path = "/Web/";
 
-    webserver = new RestfulAPIServer(port);
+    RestfulAPIServer webserver = new RestfulAPIServer(port);
     webserver.setPath("./web/"); // Set the path for static resources
 
     webserver.GET("/test", new APIHandler() { // Setup a new API handler for Get requests at "./test"

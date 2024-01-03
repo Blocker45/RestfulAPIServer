@@ -46,20 +46,27 @@ public class RequestHandler implements HttpHandler {
                 return404(exchange, uri);
                 return;
             }
+            Context context;
             try {
-                POSTAPIList.get(uri).getHandler().handle(new Context(exchange));
+                context = new Context(exchange);
             } catch (Exception e) {
                 Log.Warn(String.format("Failed to read the params (%s)", uri_origin));
+                return;
             }
+            POSTAPIList.get(uri).getHandler().handle(context);
             return;
         }
         if (GETAPIList.get(uri) != null) {
             Log.RequestLog(uri, "GET", 200);
+            Context context;
             try {
-                GETAPIList.get(uri).getHandler().handle(new Context(exchange));
+                 context = new Context(exchange);
+
             } catch (Exception e) {
                 Log.Warn(String.format("Failed to read the params (%s)", uri_origin));
+                return;
             }
+            GETAPIList.get(uri).getHandler().handle(context);
             return;
         }
 
